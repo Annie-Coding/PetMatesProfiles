@@ -116,14 +116,15 @@ text-decoration: none;
   display: flex;
 }
 p {
-  padding: 20px 400px;
+  padding: 20px 100px;
   font-family: 'Indie Flower', cursive;
 }
 .long_photo_frame {
   background-color: white;
   height: auto;
-  width: 300px;
+  width: 450px;
   margin-top: none;
+  margin: 40px;
 }
 .long_photo {
   height: 100%;
