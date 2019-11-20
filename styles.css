@@ -41,9 +41,10 @@ text-decoration: none;
   position: relative;
 }
 .big_photo .image {
-  background: url("images/Chair_Park.jpg");
+  background: url("images/Big_Photo.JPG");
   background-color: white;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -131,10 +132,20 @@ p {
   background-position: center !important;
   background-size: contain !important;
   background-repeat: no-repeat;
-  background: url("images/Duo_photo.jpeg")
+  background: url("images/Bone.jpeg")
 }
-button {
-  border: none;
+.last_photo_frame {
+  width: 600px;
+  height: 500px;
+  margin: 20px 400px;
+  background-color: blue;
+  display: flex;
+}
+.last_photo {
+  text-align: center;
+  margin-top: 50px;
+}
+ button {
   border-radius: 40px;
   background-color: white;
   padding: 20px;
@@ -142,15 +153,32 @@ button {
   border-color: #AFDAFF;
   border-width: medium;
   border-style: double;
-  font-weight: bolder;
 }
-button:hover {
+ button:hover {
   background-color: #AFDAFF;
   color: white;
+  font-weight: bolder;
+}
+.pictures {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
 }
 .futhur_info {
   background-color: #CCE7FF;
   padding: 60px;
+}
+.image_frame {
+  display: inline-block;
+  background-color: #CCE7FF;
+  border-bottom: 8px #CCE7FF solid;
+  border-right: 10px #CCE7FF solid;
+  border-top: 4px #CCE7FF solid;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px;
 }
 .parting_message {
   margin-right: 20px;
@@ -168,4 +196,20 @@ button:hover {
   color: white;
   text-align: center;
   padding: 10px 20px;
+}
+.link {
+  border-radius: 40px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  border-color: #AFDAFF;
+  border-width: medium;
+  border-style: double;
+}
+.link:hover {
+  background-color: #AFDAFF;
+  color: white;
+  font-weight: bolder;
 }
