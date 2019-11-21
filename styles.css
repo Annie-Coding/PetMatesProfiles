@@ -76,19 +76,19 @@ body {
   text-align: center;
   justify-content: flex-end;
   position: relative;
-  width: 1500px;
+  width: 1200px;
   overflow: hidden;
 }
 .Hero_image {
   background-color: white;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 1200px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.8;
   overflow: hidden;
 }
 .photo_frame {
@@ -104,12 +104,11 @@ body {
 .little_photo {
   border-radius: 150px;
   background: url('images/Bed_shot.jpeg');
-  width: 200px;
+  width: 220px;
   top: 0;
   left: 0;
   background-size: cover;
   display: flex;
-  margin-bottom: 17px;
 
 }
 .faded_box {
@@ -209,15 +208,15 @@ p {
   display: inline-block;
 }
 .futhur_info {
-  background-color: #CCE7FF;
+  background-color: pink;
   padding: 60px 20px;
 }
 .image_frame {
   display: inline-block;
-  background-color: #CCE7FF;
-  border-bottom: 8px #CCE7FF solid;
-  border-right: 10px #CCE7FF solid;
-  border-top: 4px #CCE7FF solid;
+  background-color: pink;
+  border-bottom: 8px pink solid;
+  border-right: 10px pink solid;
+  border-top: 4px pink solid;
   padding: 0px;
   margin: 0px;
   border-radius: 5px;
@@ -317,12 +316,15 @@ p {
   }
   .big_photo {
     float: left;
-    width: 60%;
+    width: 80%;
+  }
+  .Hero_image {
+    width:1200px;
   }
   .about_me {
     float: left;
     padding: 40px;
-    width: 40%;
+    width: 20%;
   }
   .nav_item {
     width: 25%;
