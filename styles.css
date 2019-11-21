@@ -5,43 +5,79 @@ html {
 }
 body {
   margin: 0px;
+  overflow-x: hidden; /* This is so the content stays inside the page */
 }
+/* Main navigation */
+.main_header {
+  overflow: auto;
+  clear: both;
+  background-color: pink;
+  margin-bottom: 24px;
+}
+.main_header a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+.main_header a:hover {
+  text-decoration: underline;
+}
+.main_header ul {
+  float: right;
+  overflow: auto;
+  clear: both;
+}
+.main_header ul li {
+  float: left;
+  list-style: none;
+  padding-right: 20px;
+}
+
+/* Secondary navigation*/
 .header {
   background-color: pink;
 }
 .nav_bar {
-  height: 30px;
-  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   justify-content: center;
   margin-top: 30px;
   background-color: white;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .nav_item {
-  margin: 4px 30px;
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   color: black;
 }
 .nav_link {
-text-decoration: none;
+  text-decoration: none;
 }
-.nav_item:hover {
+.nav_item a {
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  color: black;
+}
+.nav_item a:hover {
   background-color: #AFDAFF;
   color: white;
-  padding: 2px 20px;
 }
 .big_photo {
-  padding: 200px;
-  width: 50%;
+  padding: 200px 0;
   text-align: center;
   justify-content: flex-end;
-  float: left;
   position: relative;
 }
-.big_photo .image {
-  background: url("images/Big_Photo.JPG");
+.Hero_image {
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -52,6 +88,7 @@ text-decoration: none;
   height: 100%;
   z-index: 1;
   opacity: 0.6;
+  overflow: hidden;
 }
 .photo_frame {
      border-radius: 150px;
@@ -97,42 +134,48 @@ text-decoration: none;
 }
 .about_me {
   position: relative;
-  float: right;
-  padding: 40px;
+  width: 100%;
+  padding: 40px 0;
   text-align: center;
   font-size: 15px;
   font-family: 'Unica One', cursive;
+  box-sizing: border-box;
+}
+.about_me_wrapper {
+  display: inline-block;
 }
 .white_box {
+  clear: both;
   background-color: white;
   width: 100%;
-  margin-top: 599px;
   padding: 60px 0px;
   position: relative;
   border-color: #AFDAFF;
   border-width: medium;
   border-style: double;
+  box-sizing: border-box; /* This is so the border is included in the width */
 }
 .about-container {
   display: flex;
 }
 p {
-  padding: 20px 100px;
+  padding: 20px;
   font-family: 'Indie Flower', cursive;
 }
 .long_photo_frame {
   background-color: white;
   height: auto;
+  min-height: 1235px;
   width: 450px;
   margin-top: none;
   margin: 40px;
 }
 .long_photo {
   height: 100%;
-  background-position: center !important;
+  background-image: url("images/Bone.jpeg");
+  background-repeat: repeat-y;
+  background-position: top !important;
   background-size: contain !important;
-  background-repeat: no-repeat;
-  background: url("images/Bone.jpeg")
 }
 .last_photo_frame {
   width: 600px;
@@ -168,7 +211,7 @@ p {
 }
 .futhur_info {
   background-color: #CCE7FF;
-  padding: 60px;
+  padding: 60px 20px;
 }
 .image_frame {
   display: inline-block;
@@ -188,14 +231,14 @@ p {
   align-items: center;
 }
 .footer {
-  position: relative;
+  position: absolute; /* We set this to absolute to anchor this to bottom */
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #FFC4C4;
   color: white;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 .link {
   border-radius: 40px;
@@ -212,4 +255,89 @@ p {
   background-color: #AFDAFF;
   color: white;
   font-weight: bolder;
+}
+
+/* HOME PAGE!! */
+/* styles for homepage */
+.tiles {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tiles .pet {
+  flex: 0 1 50%;
+  padding: 10px;
+  text-align: center;
+  color: grey;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.tiles :hover {
+  background-color: #AFDAFF;
+}
+.pet img {
+  display: block;
+  width: 100%;
+}
+.pet p {
+  font-size: 24px;
+  padding: 0;
+  margin-bottom: 12px;
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+}
+.pet span {
+  font-family: 'Indie Flower', cursive;
+}
+.ned {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+.ned > img {
+  position: absolute;
+  top: -9698px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+.main_nav {
+  font-family: 'Lobster', cursive;
+}
+!! .main_nav ul :hover {
+  color: white;
+}
+/* anything that is not mobile or a tablet */
+@media only screen and (min-width: 600px) {
+  .white_box {
+    margin-top: 599px;
+  }
+  .big_photo {
+    float: left;
+    width: 60%;
+  }
+  .about_me {
+    float: left;
+    padding: 40px;
+    width: 40%;
+  }
+  .nav_item {
+    width: 25%;
+  }
+  .long_photo_frame {
+
+  }
+  .futhur_info {
+    padding: 60px;
+  }
+  p {
+    padding: 20px 100px;
+  }
+  .tiles .pet {
+    flex: 0 1 33.33%;
+  }
 }
