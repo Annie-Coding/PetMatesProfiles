@@ -125,6 +125,7 @@ body {
 .headings {
   font-family: 'Lobster', cursive;
   font-size: 80px;
+  text-align:center;
 }
 .sub_headings {
   font-family: 'Unica One', cursive;
@@ -286,6 +287,9 @@ p {
 }
  .main_nav ul :hover {
   color: white;
+}
+.middle {
+  text-align: center;
 }
 /* anything that is not mobile or a tablet */
 @media only screen and (min-width: 600px) {
