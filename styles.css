@@ -12,14 +12,18 @@ body {
   overflow: auto;
   clear: both;
   background-color: pink;
-  margin-bottom: 24px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.main_header img {
+  width: 50%;
+  padding: 20px;
 }
 .main_header a {
   float: left;
-  display: block;
   text-decoration: none;
   font-weight: bold;
-  color: grey;
+  color: black;
 }
 .main_header a:hover {
   text-decoration: underline;
@@ -28,11 +32,13 @@ body {
   float: right;
   overflow: auto;
   clear: both;
+  margin: 35px 0px 24px 300px;
 }
 .main_header ul li {
   float: left;
   list-style: none;
-  padding-right: 20px;
+  padding-right: 70px;
+  font-size: 30px;
 }
 
 /* Secondary navigation*/
@@ -80,7 +86,7 @@ body {
   overflow: hidden;
 }
 .Hero_image {
-  background-color: white;
+  background-image: url("images/dogs.jpg");
   background-size: cover;
   background-position: center;
   width: 1200px;
@@ -170,7 +176,7 @@ p {
 }
 .long_photo {
   height: 100%;
-  background-image: url("images/Bone.jpeg");
+  background-image: url("images/dogs.jpg");
   background-repeat: repeat-y;
   background-position: top !important;
   background-size: contain !important;
@@ -223,13 +229,13 @@ p {
 }
 .parting_message {
   margin-right: 20px;
-  margin: 50px 100px 0px 100px;
+  margin: 0px 100px 0px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer {
-  position: absolute; /* We set this to absolute to anchor this to bottom */
+  /* position: absolute; /* We set this to absolute to anchor this to bottom */ */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -237,22 +243,6 @@ p {
   color: white;
   text-align: center;
   padding: 10px 0;
-}
-.link {
-  border-radius: 40px;
-  background-color: white;
-  padding: 20px;
-  margin: 10px;
-  text-decoration: none;
-  color: black;
-  border-color: #AFDAFF;
-  border-width: medium;
-  border-style: double;
-}
-.link:hover {
-  background-color: #AFDAFF;
-  color: white;
-  font-weight: bolder;
 }
 
 /* HOME PAGE!! */
@@ -290,23 +280,10 @@ p {
 .pet span {
   font-family: 'Indie Flower', cursive;
 }
-.ned {
-  overflow: hidden;
-  width: 100%;
-  height: 300px;
-}
-.ned > img {
-  position: absolute;
-  top: -9698px;
-  left: -9999px;
-  right: -9999px;
-  bottom: -9999px;
-  margin: auto;
-}
 .main_nav {
   font-family: 'Lobster', cursive;
 }
-!! .main_nav ul :hover {
+ .main_nav ul :hover {
   color: white;
 }
 /* anything that is not mobile or a tablet */
@@ -328,9 +305,6 @@ p {
   }
   .nav_item {
     width: 25%;
-  }
-  .long_photo_frame {
-
   }
   .futhur_info {
     padding: 60px;
